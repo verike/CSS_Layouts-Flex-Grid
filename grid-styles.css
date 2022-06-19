@@ -1,0 +1,58 @@
+/* For The Grid layout */
+
+/*---------- CSS Grid ----------*/
+
+.main-container {
+    background-color: #1a1c28;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    place-items: center;
+    width: 910px;
+    height: 554px;
+    margin: auto;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-areas:
+      "a a a b b"
+      "a a a b b"
+      "c c d d d"
+      "c c e e e";
+    gap: 10px;
+    margin: auto;
+    width: 50%;
+
+  }
+  .grid-container div {
+    padding: 0.1rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .item-a {
+    background-color: #eb5020;
+    grid-area: a;
+    padding-left: 2em;
+  }
+  
+  .item-b {
+    background-color: #ffa401;
+    grid-area: b;
+  }
+  
+  .item-c {
+    background-color: #05aa42;
+    grid-area: c;
+  }
+  
+  .item-d {
+    background-color: #01aefd;
+    grid-area: d;
+  }
+  
+  .item-e {
+    background-color: #01aefd;
+    grid-area: e;
+  }
+  
